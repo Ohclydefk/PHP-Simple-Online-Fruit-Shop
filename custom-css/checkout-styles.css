@@ -1,0 +1,16 @@
+body {
+  padding-top: 95px;
+}
+
+.top-links {
+  padding-bottom: 7px;
+}
+
+.top-links a h4 {
+  text-decoration: underline;
+}
+
+.upper-part {
+  padding-bottom: 50px;
+  border-radius: 0 0 6px 6px;
+}

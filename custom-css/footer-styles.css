@@ -1,0 +1,22 @@
+.footer-container {
+  margin-top: 220px;
+  background: linear-gradient(60deg, #0786d5, #7a18e3, #930036);
+  position: relative;
+  padding: 15px 15px;
+  border-radius: 10px 10px 0 0;
+}
+
+.devs, .contact {
+  list-style: none;
+  color: white;
+}
+
+.devs a, .contact a {
+  transition: color 0.33s;
+  font-size: 16px;
+}
+
+.devs a:hover, .contact a:hover  {
+  color: rgb(0, 182, 33);
+}
+

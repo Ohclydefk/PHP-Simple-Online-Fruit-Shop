@@ -1,0 +1,31 @@
+@import url('product-list.css');
+
+.thizSearchTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: linear-gradient(20deg, rgb(7,108,153), #00ff8c);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.custom-searchbar {
+  max-width: 730px;
+}
+
+.custom-searchbar > input {
+  height: 3.5rem;
+}
+
+.custom-searchbar > input:focus {
+  box-shadow: none;
+  border: none;
+}
+
+.searchbar-container {
+  margin-top: 45px;
+  margin-bottom: 160px;
+}

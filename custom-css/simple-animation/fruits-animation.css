@@ -1,0 +1,65 @@
+.thizTitle {
+  animation: delayTranslateY 0.5s 0.6s forwards;
+  transform: scaleY(0);
+  transform-origin: center;
+}
+
+@keyframes delayTranslateY {
+  from {
+    transform: scaleY(0);
+  }
+
+  to {
+    transform: scaleY(1);
+  }
+}
+
+hr {
+  animation: delayTranslateX 0.5s 1s ease-in-out forwards;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+@keyframes delayTranslateX {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.custom-modified-row {
+  animation: rowTranslation 0.75s;
+}
+
+@keyframes rowTranslation {
+  from {
+    transform: translateX(-100%);
+  } 
+
+  to {
+    transform: translateX(1);
+  }
+}
+
+
+.custom-modified-row::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 94.5%;
+  margin-left: 13px;
+  background-color: rgba(194, 194, 194, 0.103);
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.33s;
+  border-radius: 0 10px 10px 0;
+}
+
+.custom-modified-row:hover::before,
+.custom-modified-row:focus::before {
+  transform: scaleX(1);
+}

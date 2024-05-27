@@ -1,0 +1,81 @@
+@import url('product-list.css');
+
+.thizSearchTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: linear-gradient(80deg, #1c7bb6, #0be784);
+  background-clip: text;
+  color: transparent;
+  background-size: contain;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.custom-searchbar {
+  max-width: 730px;
+}
+
+.custom-searchbar button[name="search"] {
+  position: relative;
+}
+
+.custom-searchbar button[name="search"]::before {
+  content: '';
+  width: 28px;
+  height: 28px;
+  background-image: url('absolute-img-decorative/leaf-top.png');
+  background-repeat: no-repeat;
+  background-size: 28px 28px;
+  position: absolute;
+  top: -14px;
+  right: -17px;
+  display: inline-block;
+}
+
+.custom-searchbar input {
+  height: 3.5rem;
+}
+
+.custom-searchbar input:focus {
+  box-shadow: none;
+  border: none;
+}
+
+.searchbar-container {
+  margin-top: 45px;
+  margin-bottom: 130px;
+}
+
+.error-msg {
+  white-space: nowrap;
+}
+
+.best-seller-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: start;
+  column-gap: 10px;
+  width: 100%;
+  max-width: 150px;
+  background: linear-gradient(30deg, #096ba8, #07ce75);
+  background-size: 100%;
+  background-repeat: no-repeat;  
+  position: absolute;
+  border-radius: 7px 0 0 7px;
+  z-index: 1;
+  top: 15px;
+  right: 0;
+  padding: 10px;
+}
+
+.best-seller-container p {
+  color: black;
+}
+
+.best-seller-container img {
+  max-width: 25px;
+  max-height: 25px;
+}

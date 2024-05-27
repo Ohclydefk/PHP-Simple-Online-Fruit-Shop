@@ -1,0 +1,69 @@
+.thizTitle {
+  font-size: 2.4rem;
+  font-weight: bold;
+  background: linear-gradient(40deg, rgb(21, 154, 231), rgb(27, 186, 133));
+  background-size: contain;
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.itemname {
+  background: linear-gradient(45deg, rgb(119, 244, 56), rgb(216, 227, 13));
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.custom-modified-row {
+  margin-bottom: 80px;
+  box-shadow: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.custom-modified-row:hover {
+  transform: translateY(-6px);
+}
+
+.disp-img {
+  object-position: center;
+  object-fit: cover;
+  border: 1.2pt solid rgb(41, 239, 183);
+}
+
+.custom-modified-row {
+  max-width: 690px;
+}
+
+.custom-modified-row > .col:first-child {
+  max-width: 250px;
+}
+
+.qty-input {
+  width: 20px;
+}
+
+.custom-btn {
+  position: relative;
+}
+
+.custom-btn::before {
+  content: '';
+  width: 40px;
+  height: 40px;
+  background-image: url('absolute-img-decorative/shopping-cart.png');
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+  position: absolute;
+  top: -18px;
+  right: -20px;
+  display: inline-block;
+} 
+
+.prod-img {
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5px;
+}

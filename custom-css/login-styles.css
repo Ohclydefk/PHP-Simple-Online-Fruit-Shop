@@ -1,0 +1,56 @@
+body {
+  padding: 0;
+  margin: 7.6vh 0 0 0;
+  color: white;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('wallpaper/wall.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.box {
+  width: 100%;
+  max-width: 65rem;
+  border-radius: 15px;
+  box-shadow: 0 2.4pt 4pt rgba(0, 0, 0, 0.499);
+  background-color: transparent;
+  position: relative;
+  background-color: #160640;
+}
+
+.box::before {
+  content: '';
+  width: 46px;
+  height: 46px;
+  background-image: url('absolute-img-decorative/leaf-top.png');
+  background-repeat: no-repeat;
+  background-size: 46px 46px;
+  position: absolute;
+  top: -26px;
+  right: -20px;
+  display: inline-block;
+}
+
+h3 {
+  font-weight: bold;
+  background: linear-gradient(30deg, #1e9fef, #0be080);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.inputbar {
+  width: 95%;
+}
+
+.inputbar:focus {
+  box-shadow: 0 0 0 3px #1e9fef;
+  border: 1pt solid rgb(8, 81, 254);
+}
+
+

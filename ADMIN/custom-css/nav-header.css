@@ -1,0 +1,34 @@
+.custom-navigation {
+  background: linear-gradient(70deg, rgb(6, 99, 152), rgb(13, 227, 156));
+  background-repeat: no-repeat;
+}
+
+.custom-ul {
+  font-size: 1.05rem;
+}
+
+.custom-btn-click:active {
+  box-shadow: 0 0 0 4px rgb(3, 185, 192);
+}
+
+ul > li > a > button {
+  background-color: transparent;
+  border: none;
+  transition: all 0.7s;
+  color: white;
+  border-radius: 7px 0 7px 0;
+  position: relative;
+  margin-left: 40px;
+}
+
+.logo-img {
+  transition: all 0.5s;
+}
+
+.logo-img:hover {
+  scale: 1.3;
+}
+
+ul > li > a > button:hover {
+  scale: 1.05;
+}

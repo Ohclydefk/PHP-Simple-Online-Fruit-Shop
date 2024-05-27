@@ -1,0 +1,25 @@
+.orders-title {
+  font-size: 1.7rem;
+  background: linear-gradient(30deg, #1591dd, #07ce75);
+  background-clip: text;
+  background-size: 290px;
+  background-repeat: no-repeat;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+table {
+  border-radius: 5px;
+  font-weight: normal;
+}
+
+tr {
+  border-bottom: 1.5pt solid rgba(255, 255, 255, 0.192);
+}
+
+thead {
+  background-color: rgb(16, 90, 208);
+  border-radius: 5px 5px 0 0;
+}

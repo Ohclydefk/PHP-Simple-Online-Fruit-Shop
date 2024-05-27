@@ -1,0 +1,89 @@
+body {
+  padding: 0;
+  margin: 5vh 0 0 0;
+  color: white;
+  background-image: url('wallpaper/wall.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  padding: 0;
+}
+
+.box {
+  width: 100%;
+  max-width: 75rem;
+  border-radius: 15px;
+  border: 2pt solid rgb(11, 101, 55);
+  box-shadow: 0 2pt 2pt rgba(255, 255, 255, 0.279);
+  background-color: rgb(11, 115, 62);
+  position: relative;
+}
+
+.box::before {
+  content: '';
+  width: 35px;
+  height: 35px;
+  background-image: url('absolute-img-decorative/leaf-top.png');
+  background-repeat: no-repeat;
+  background-size: 35px 35px;
+  position: absolute;
+  top: -20px;
+  right: -17px;
+  display: inline-block;
+}
+
+h3 {
+  font-weight: bold;
+  background: linear-gradient(30deg, #1e9fef, #0be080);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.display-query-status {
+  width: 50%;
+}
+
+.input-feild:focus {
+  box-shadow: 0 0 0 3px #1eefad;
+  border: 1pt solid rgb(1, 186, 96);
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+small {
+  margin-top: -15px;
+}
+
+.welcome-img {
+  object-fit: cover;
+  object-position: top;
+}
+
+/* .ErrorBox {
+  padding: 5px 5px 5px 10px;
+  position: absolute;
+  display: flex;
+  flex: 1;
+  width: 100%;
+  max-width: 410px;
+  border: 1px solid rgb(229, 38, 38);
+  top: 160px;
+  right: 20px;
+  border-radius: 5px;
+  height: 100%;
+  max-height: 150px;
+  box-shadow: 0 1pt 3px 0 rgb(0, 0, 0);
+  flex-direction: row;
+} */

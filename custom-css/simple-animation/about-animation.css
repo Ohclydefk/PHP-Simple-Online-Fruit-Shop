@@ -1,0 +1,51 @@
+.company-history, .about-fim {
+  animation: fromTopTransition 0.4s 1s forwards;
+  transform: scaleX(0);
+}
+
+@keyframes fromTopTransition {
+  from {
+    opacity: 0;
+    transform: translateY(-65px);
+  }
+
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+    transform: translateY(0);
+  }
+}
+
+.left-container {
+  animation: fromleftTransition 0.4s forwards;
+  transform: translateY(-65px);
+  opacity: 0; 
+}
+
+@keyframes fromleftTransition {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.right-container {
+  animation: rightcontainerTranslation 0.5s ease-out;
+}
+
+@keyframes rightcontainerTranslation {
+  from {
+    transform: translateX(300%);
+    opacity: 0;
+  } 
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

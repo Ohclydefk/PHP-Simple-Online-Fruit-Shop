@@ -1,0 +1,79 @@
+@import url(fruits-animation.css);
+
+.thizSearchTitle {
+  animation: fromTopTransition 0.45s forwards 0.5s;
+  transform: scaleY(0);
+  transform-origin: top;
+}
+
+@keyframes fromTopTransition {
+  from {
+    transform: scaleY(0);
+  }
+
+  to {
+    transform: scaleY(1);  }
+}
+
+.result-set, .error-msg {
+  animation: fromrightTransition 0.4s forwards;
+  transform: translateY(-65px);
+}
+
+@keyframes fromrightTransition {
+  from {
+    opacity: 0;
+    transform: translatex(-100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.custom-searchbar {
+  animation: fromBottomTransition 0.5s forwards 0.2s;
+  transform: scale(0);
+  transform: translateY(50px);
+  opacity: 0;
+}
+
+@keyframes fromBottomTransition {
+  0% {
+    scale: 0;
+    opacity: 0.65;
+    transform: translateY(50px);
+  }
+
+  50% {
+    scale: 1.1;
+    opacity: 0.8;
+    transform: translateY(25px);
+  }
+
+  100% {
+    opacity: 1;
+    scale: 1;
+    transform: translateY(0);
+  }
+}
+
+.custom-modified-row-search::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  margin-left: 13px;
+  background-color: rgba(194, 194, 194, 0.103);
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.33s;
+  border-radius: 0 10px 10px 0;
+}
+
+.custom-modified-row-search:hover::before,
+.custom-modified-row-search:focus::before {
+  transform: scaleX(1);
+}
